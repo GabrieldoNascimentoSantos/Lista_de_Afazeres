@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/fragmentPrincipal">
+
+    <fragment
+    android:id="@+id/fragmentPrincipal"
+        android:name="br.senai.sp.cotia.listadeafazeres.fragments.PrincipalFragment"
+        android:label="Minha Lista de Tarefas"
+        tools:layout="@layout/fragment_principal">
+        <action
+            android:id="@+id/action_fragmentPrincipal_to_fragmentLista"
+            app:destination="@id/fragmentDetalheTarefa"/>
+        <action
+            android:id="@+id/action_fragmentPrincipal_to_fragment"
+            app:destination="@id/fragmentCadTarefa"/>
+    </fragment>
+
+    <fragment
+        android:id="@+id/fragmentDetalheTarefa"
+        android:name="br.senai.sp.cotia.listadeafazeres.fragments.DetalheTarefaFragment"
+        android:label="Lista de Afazeres"
+        tools:layout="@layout/fragment_detalhe_tarefa">
+        <action
+            android:id="@+id/action_fragmentDetalheTarefa_to_fragmentLista"
+            app:destination="@id/fragmentCadSubTarefa"/>
+    </fragment>
+
+    <fragment
+        android:id="@+id/fragmentCadSubTarefa"
+        android:name="br.senai.sp.cotia.listadeafazeres.fragments.CadSubTarefaFragment"
+        android:label="Lista de Afazeres"
+        tools:layout="@layout/fragment_cad_sub_tarefa">
+        <action
+            android:id="@+id/action_fragmentCadSubTarefa_to_fragmentLista" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/fragmentCadTarefa"
+        android:name="br.senai.sp.cotia.listadeafazeres.fragments.CadTarefaFragment"
+        android:label="Cadastro de Tarefas"
+        tools:layout="@layout/fragment_cad_tarefa">
+        <action
+            android:id="@+id/action_fragmentDetalheTarefa_to_fragmentLista"/>
+    </fragment>
+
+</navigation>

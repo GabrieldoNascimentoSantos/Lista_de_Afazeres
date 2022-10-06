@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".fragments.CadTarefaFragment">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+    <TextView
+        style="@style/estilo_base"
+        android:padding="15dp"
+        android:text="@string/titulo" />
+
+    <EditText
+        android:id="@+id/edit_titulo"
+        android:inputType="text|textCapSentences"
+        android:layout_marginTop="10dp"
+        style="@style/edit_text" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/descricao"
+            android:layout_marginTop="10dp"
+            android:padding="15dp"/>
+        <EditText
+            android:id="@+id/edit_descricao"
+            android:gravity="top"
+            android:lines="4"
+            android:inputType="textMultiLine|textCapSentences"
+            android:layout_marginTop="10dp"
+            style="@style/edit_text"/>
+        <TextView
+            style="@style/estilo_base"
+            android:padding="15dp"
+            android:text="@string/realizacao" />
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/botaoData"
+            android:backgroundTint="@color/azul"
+            android:text="@string/data"
+            android:layout_marginRight="10dp"
+            android:layout_marginLeft="10dp"
+            android:width="20dp">
+        </Button>
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/botaoSalvar"
+            android:backgroundTint="@color/azul"
+            android:text="@string/salvar"
+            android:layout_marginRight="10dp"
+            android:layout_marginLeft="10dp"
+            android:width="20dp">
+        </Button>
+
+
+    </LinearLayout>
+
+
+</FrameLayout>

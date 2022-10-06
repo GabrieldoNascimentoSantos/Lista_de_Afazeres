@@ -1,0 +1,20 @@
+<resources>
+    <string name="app_name">Lista de Afazeres</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="titulo">Tarefa:</string>
+    <string name="descricao">Descrição da Tarefa:</string>
+    <string name="realizacao">Data para Realização:</string>
+    <string name="data">Escolha uma Data</string>
+    <string name="salvar">Salvar</string>
+    <string name="validacao">Informe um Titulo</string>
+    <string name="validData">Informe uma Data</string>
+    <string name="msgTitulo">Java</string>
+    <string name="msgData">04/05/2022</string>
+    <string name="dataRealizacao">Realizada</string>
+    <string name="dataAberta">Entregue</string>
+    <string name="dataAtrasada">Pendente</string>
+    <string name="digite">Digite a subtarefa</string>
+    <string name="dataDetalhe">Data para Realização</string>
+    <string name="subtarefa">SubTarefa</string>
+</resources>
